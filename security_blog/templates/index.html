@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to Security_Blog {% endblock %}</h1>
+    <a href="{{ url_for('SQLi')}}">
+        <h2>SQLi</h2>
+    </a>
+    <a href="{{ url_for('LFI')}}">
+        <h2>LFI</h2>
+    </a>
+    <a href="{{ url_for('RCE')}}">
+        <h2>RCE</h2>
+    </a>
+    <a href="{{ url_for('XSS')}}">
+        <h2>XSS</h2>
+    </a>
+
+    <hr>
+{% endblock %}
